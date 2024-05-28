@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Safari knowledge</title>
+  <!-- cdn bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- cdn css -->
+  <link rel="stylesheet" href="./style.css">
+  <!-- stile google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Dosis:wght@200..800&display=swap" rel="stylesheet">
+  <!-- cdn icone boostrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-md navbar-white bg-white fixed-top p-3 shadow sm" aria-label="Fourth navbar example">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="./icone/logo zampe.png" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExample04">
+        <ul class="navbar-nav me-auto mb-2 mb-mg-0">
+          
+          <li class="nav-item mx-md-2">
+            <a class="nav-link" href="#animali">Animali</a>
+          </li>
+          <li class="nav-item mx-md-2">
+            <a class="nav-link" href="#animali-albini">Animali albini</a>
+          </li>
+          <li class="nav-item mx-md-2">
+            <a class="nav-link" href="#dove-trovarli">Dove trovarli</a>
+          </li>
+        </ul>
+
+        <form class="mb-3 mb-md-0" role="search">
+          <input class="form-control" type="search" placeholder="🔍 cerca qui" aria-label="Search">
+        </form>
+
+        <button class="btn btn-success ms-md-3 mb-3 mb-md-0" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+          <i class="bi bi-box-arrow-in-right"></i>
+        </button>
+
+        <button class="btn btn-success ms-md-3 mb-3 mb-md-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <i class="bi bi-person-lines-fill fs-5"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  
+
+  <!-- Modale registrati -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content border-0 bg-2">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5 text-white" id="staticBackdropLabel">Registrati</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-white">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3 form-check">
+                </div>
+                <button type="submit" class="btn btn-success" data-bs-dismiss="modal">Registrati</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  <!-- Modale di accedi -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content border-0 bg-2">
+      <div class="modal-body text-white">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center">
+              <p class="h3">Accedi</p>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Ricorda la password</label>
+                </div>
+                <button type="submit" class="btn btn-success">Accedi</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Sezione Hero -->
+  <header class="position-relative"> 
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active slide1">
+          <div class="carousel-caption">
+            
+          </div>
+        </div>
+        <div class="carousel-item slide2">
+          <div class="carousel-caption">
+            
+          </div>
+        </div>
+        <div class="carousel-item slide3">
+          <div class="carousel-caption">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+<!-- sezioni dei valori -->
+<div id="valori" class="container my-5 py-5">
+  <div class="row mb-5">
+    <div class="col-12 col-md-3 mb-4">
+      <div class="card d-block mx-auto rounded-0 border-0 shadow borde-1" style="width: 18rem;">
+        <div class="card-body">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-12"></div>
+              <div class="col-12">
+                <img src="./immagini/tigre.jpg" class="img-fluid" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-3 mb-4">
+      <div class="card d-block mx-auto rounded-0 border-0 shadow borde-1" style="width: 18rem;">
+        <div class="card-body">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-12"></div>
+              <div class="col-12">
+                <img src="./immagini/elefanti.jpg" class="img-fluid" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-3 mb-4">
+      <div class="card d-block mx-auto rounded-0 border-0 shadow borde-1" style="width: 18rem;">
+        <div class="card-body">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-12"></div>
+              <div class="col-12">
+                <img src="./immagini/zebre.jpg" class="img-fluid" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-3 mb-4">
+      <div class="card d-block mx-auto rounded-0 border-0 shadow borde-1" style="width: 18rem;">
+        <div class="card-body">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-12"></div>
+              <div class="col-12">
+                <img src="./immagini/rinoceronti.jpg" class="img-fluid" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>      
+</div>
+  
+<!-- Section animali-->
+<div id="animali" class="container my-5 py-5">
+  <div class="row align-items-center mb-5">
+    <div class="col-12 col-md-6">
+      <h2 class="tx-1 design-underline">TIGRE</h2>
+      <p class="font-dosis lead">La tigre è un mammifero carnivoro della famiglia dei felidi. È il più grande dei cosiddetti "grandi felini" che costituiscono il genere Panthera. È un cosiddetto predatore alfa, ovvero si colloca all'apice della catena alimentare, non avendo predatori in natura, a parte l'uomo.</p>
+      <p class="font-dosis lead">Il corpo della Tigre del Bengala può raggiungere, nel maschio la lunghezza di 2.70 m fino a 3.10 metri, coda compresa. Il peso può variare dai 180 ai 260 kg. Ha un caratteristico mantello color bianco/crema, adornato da strisce nere, grigie o color cioccolato.</p>
+    </div>
+    <div class="col-12 col-md-6">
+      <img src="./immagini/tigre.jpg" class="img-fluid borde-1" alt="">
+    </div>
+  </div>
+  <div class="row align-items-center mb-5">
+    <div class="col-12 col-md-6 order-md-last">
+      <h2 class="tx-1 design-underline">COCCODRILLO</h2>
+      <p class="font-dosis lead">I coccodrilli sono un ordine di sauropsidi diapsidi. A causa della forte armatura squamosa di cui sono dotati questi animali hanno anche il nome di Loricati. Questi potenti animali, e gli uccelli, sono gli unici arcosauri viventi.</p>
+      <p class="font-dosis lead">È uno degli animali più longevi: in media vive 70-80 anni, ma alcuni esemplari arrivano anche a 100 anni. Il coccodrillo è un grande nuotatore e trascorre molto tempo in acqua. Può comunque muoversi sulla terra ferma per lunghi tratti, strisciando sul ventre e sostenendosi sulle zampe robuste.</p>
+    </div>
+    <div class="col-12 col-md-6">
+      <img src="./immagini/coccodrillo.jpg" class="img-fluid borde-1" alt="">
+    </div>
+  </div>
+  <div class="row align-items-center mb-5">
+    <div class="col-12 col-md-6">
+      <h2 class="tx-1 design-underline">GIRAFFA</h2>
+      <p class="font-dosis lead">La giraffa è un genere di mammifero artiodattilo. Originaria dell'Africa, è il più alto animale terrestre, nonché il più grande ruminante esistente. Tradizionalmente il genere contiene una singola specie, Giraffa camelopardalis L., con nove sottospecie.</p>
+      <p class="font-dosis lead">Inconfondibile con il suo lungo collo e le zampe altissime, la giraffa è il più grande animale ruminante e il più alto mammifero vivente. I maschi possono raggiungere i 6 metri e mezzo di altezza. È in grado di raggiungere le foglie di cui si nutre a oltre 2 metri di altezza, irraggiungibili dagli altri erbivori.</p>
+    </div>
+    <div class="col-12 col-md-6">
+      <img src="./immagini/giraffa.jpg" class="img-fluid borde-1" alt="">
+    </div>
+  </div>
+  <div class="row align-items-center mb-5">
+    <div class="col-12 col-md-6 order-md-last">
+      <h2 class="tx-1 design-underline">LEOPARDO</h2>
+      <p class="font-dosis lead">l leopardo è una specie di felide della sottofamiglia dei panterini. In passato era noto anche con il nome di pardo o, soprattutto per quanto riguarda la popolazione asiatica, pantera.</p>
+      <p class="font-dosis lead">Il leopardo è un animale solitario della boscaglia e della foresta, prevalentemente notturno, anche se a volte si crogiola al sole. È un agile arrampicatore e spesso immagazzina i resti delle sue prede tra i rami di un albero. Il leopardo è carnivoro. Si nutre di tutti gli animali che riesce a prendere.</p>
+    </div>
+    <div class="col-12 col-md-6">
+      <img src="./immagini/leopardo.jpg" class="img-fluid borde-1" alt="">
+    </div>
+  </div>
+</div>
+
+<!-- section animali albini -->
+<div id="animali-albini" class="container my-5 py-5">
+  <div class="row align-items-center mb-5">
+    <div class="col-12 col-md-6 order-md-last">
+      <h2 class="tx-1 design-underline">LEONE BIANCO</h2>
+      <p class="font-dosis lead">Il leone bianco è un leone la cui rara colorazione è un caso di polimorfismo genetico legato ad una condizione di leucismo, che causa una colorazione pallida e simile a quella delle tigri bianche. La condizione è simile, anche se con effetti opposti, al melanismo tipico della pantera nera.</p>
+      <p class="font-dosis lead">Il leone bianco deve il suo manto alla presenza di un gene recessivo. Si tratta di una forma piuttosto rara della sottospecie Panthera leo krugeri. Sebbene siano rari, i leoni bianchi si incontrano occasionalmente a Timbavati, in Sudafrica. Il loro insolito colore è dovuto alla presenza di un gene recessivo.</p>
+    </div>
+    <div class="col-12 col-md-6">
+      <img src="./immagini/leone bianco.jpg" class="img-fluid borde-1" alt="">
+    </div>
+  </div>
+  <div class="row align-items-center mb-5">
+    <div class="col-12 col-md-6">
+      <h2 class="tx-1 design-underline">PITONE BIANCO</h2>
+      <p class="font-dosis lead">Il Pitone reale albino è una specie di serpente che presenta una mutazione genetica che causa una mancanza di pigmentazione nella pelle e negli occhi, conferendo loro una tonalità biancastra. Questo serpente richiede cure e pulizia specifiche per garantirne la salute e il benessere.</p>
+    </div>
+    <div class="col-12 col-md-6">
+      <img src="./immagini/serpente bianco.jpg" class="img-fluid borde-1" alt="">
+    </div>
+  </div>
+  <div class="row align-items-center mb-5">
+    <div class="col-12 col-md-6 order-md-last">
+      <h2 class="tx-1 design-underline">RINOCERONTE BIANCO</h2>
+      <p class="font-dosis lead">Il rinoceronte bianco, detto anche rinoceronte camuso, è la più grande specie esistente di rinoceronte. La parola white, bianco, usata per indicare il rinoceronte camuso, deriva dalla parola afrikaans wyd, che significa largo, in inglese wide, e non bianco.</p>
+      <p class="font-dosis lead">Il rinoceronte bianco del Sud è il più grande, ha la testa allungata e un labbro superiore squadrato adatto a pascolare l'erba. È la specie meno minacciata con circa 16.000 esemplari allo stato selvatico, di cui il 93% in Sud Africa. Il rinoceronte bianco del Nord è purtroppo estinto in natura dal 2018.</p>
+    </div>
+    <div class="col-12 col-md-6">
+      <img src="./immagini/rinocerontebianco.jpg" class="img-fluid borde-1" alt="">
+    </div>
+  </div>
+  <div class="row align-items-center mb-5">
+    <div class="col-12 col-md-6">
+      <h2 class="tx-1 design-underline">PAVONE BIANCO</h2>
+      <p class="font-dosis lead">Imantello completamente bianco, in cui la coda del maschio assomiglia a uno splendido pizzo. Punto debole di questa varietà è l'eccessiva consanguineità, che la rende sensibile alle malattie e al clima instabile.</p>
+    </div>
+    <div class="col-12 col-md-6">
+      <img src="./immagini/pavonebianco.jpg" class="img-fluid borde-1" alt="">
+    </div>
+  </div>
+</div>
+
+<!-- section dove trovarli -->
+<div id="dove-trovarli" class="container my-5 py-5">
+  <div class="row">
+    <div class="col-12 col-md-6 mb-5">
+      <div class="dove-trovarli-sticky">
+        <p class="tx-1 h1">DOVE TROVARLI</p>
+        <p class="font-dosis lead">La Savana si trova in Africa, nelle Americhe, in Asia e in Australia. Guarda la cartina qui sotto. Nella savana crescono delle piante che possono resistere anche per molti mesi senza acqua. Per esempio il Baobab che può contenere nel suo tronco molta acqua per resistere durante la stagione secca.</p>
+      </div>
+    </div>
+    <div class="col-12 col-md-6 mb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 mb-5">
+            <div class="card border-0 shadow borde-1 rounded-0 position-relative d-block mx-auto" style="width: 18rem;">
+              <img src="./immagini/forestaammazzonica.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text font-dosis text-secondary">La Foresta amazzonica, che ricopre la maggior parte del nord-ovest del Brasile e si estende sul territorio della Colombia, del Perù e di altri paesi del Sud America, è la più grande foreste pluviale del pianeta ed è famosa per la sua biodiversità. La attraversano migliaia di fiumi, tra cui l'immenso Rio delle Amazzoni. Le città brasiliane Manaus e Belém e peruviane Iquitos e Puerto Maldonado sono tra quelle sorte lungo i fiumi e sono caratterizzate dall'architettura del XIX secolo, periodo del massimo sviluppo dell'industria del caucciù.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 mb-5">
+            <div class="card border-0 shadow borde-1 rounded-0 position-relative d-block mx-auto" style="width: 18rem;">
+              <img src="./immagini/savana.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text font-dosis text-secondary">Le savane tropicali e subtropicali sono determinate principalmente dalla scarsità e marcata stagionalità delle precipitazioni. Precipitazioni inferiori ai 1000–2000 mm all'anno sono infatti insufficienti allo sviluppo di alberi e arbusti, e determinano regioni di sola prateria erbosa, quali si trovano tipicamente ai margini dei deserti subtropicali. Spostandosi gradualmente verso latitudini più piovose, ovvero verso l'equatore, si osserva prima la comparsa di vegetazione arbustiva (fino a 3000 mm) e poi di alberi isolati (fra i 3000 mm e i 4000 mm).</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 mb-5">
+            <div class="card border-0 shadow borde-1 rounded-0 position-relative d-block mx-auto" style="width: 18rem;">
+              <img src="./immagini/savanaasiatica.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text font-dosis text-secondary">Nell’Asia tropicale si hanno i monsoni che portano piogge e umidità e quindi incontriamo, oltre alle savane, anche boschi e foreste “chiare”, cioè con alberi caducifogli, e meno lussureggianti delle giungle pluviali. In India e Indocina, queste zone sono abitate da grandi erbivori come cervi, elefanti, gaur e banteng e da predatori di grande mole come tigri, leopardi, cuon e lupi.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 mb-5">
+            <div class="card border-0 shadow borde-1 rounded-0 position-relative d-block mx-auto" style="width: 18rem;">
+              <img src="./immagini/savanaaustraliana.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text font-dosis text-secondary">La savana è un ambiente caratterizzato da molta vegetazione e una minoranza di alberi, come ad esempio i baobab e le acacie, che hanno radici lunghe fino a 50 metri sotto il livello del suolo, in modo da resistere alla forza elevata del vento.
+                  Le savane più famose sono quelle sudamericane e australiane, che si trovano in corrispondenza del tropico del Capricorno, mentre invece la savana africana si estende tra i due tropici.
+                  </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<div class="container">
+  <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+    <div class="col mb-3">
+      <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+        <img src="./icone/logo zampe.png" alt="">
+      </a>
+      <p class="tx-1">Karim Ben Abid © 2024</p>
+    </div>
+
+    <div class="col mb-3">
+
+    </div>
+
+    <div class="col mb-3">
+      <h5 class="tx-1">Sezioni</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary font-dosis">Home</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary font-dosis">Animali</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary font-dosis">Animali albini</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary font-dosis">Dove trovarli</a></li>
+
+      </ul>
+    </div>
+
+    <div class="col mb-3">
+      <h5 class="tx-1">Informazioni</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary font-dosis">Privacy policy</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary font-dosis">Use of terms</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary font-dosis">Copyright</a></li>
+      </ul>
+    </div>
+
+    <div class="col mb-3">
+      <h5 class="tx-1">Seguici</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary font-dosis">
+          <i class="bi bi-facebook tx-acc"></i>
+        </a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary font-dosis">
+          <i class="bi bi-instagram tx-acc"></i>
+        </a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary font-dosis">
+          <i class="bi bi-twitter tx-acc"></i>
+        </a></li>
+      </ul>
+    </div>
+  </footer>
+</div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
